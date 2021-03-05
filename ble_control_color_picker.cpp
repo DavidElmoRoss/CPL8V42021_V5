@@ -36,13 +36,13 @@ int main()
                 rgbLCD.locate(0,1);         // Clear bottom row characters
                 rgbLCD.print("                ");
                 rgbLCD.locate(2,1);         // Print Red Color Value @ (2,1)
-                sprintf(buf,"%i",red_color);
+                sprintf(buf,"%x",red_color);
                 rgbLCD.print(buf); 
                 rgbLCD.locate(7,1);         // Print Green Color Value @ (7,1)
                 sprintf(buf,"%d",(green_color));
                 rgbLCD.print(buf);
                 rgbLCD.locate(12,1);        // Print Blue Color Value @ (12,1)
-                sprintf(buf,"%i",(blue_color));
+                sprintf(buf,"%X",(blue_color));
                 rgbLCD.print(buf);
             }   
       }     
